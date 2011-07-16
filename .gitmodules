@@ -37,9 +37,6 @@
 [submodule "plugins/editshortcut"]
 	path = plugins/editshortcut
 	url = git://github.com/iromli/gedit-editshortcut.git
-[submodule "plugins/align-columns"]
-	path = plugins/align-columns
-	url = https://github.com/algorich/gedit-align-columns.git
 [submodule "plugins/codebrowser"]
 	path = plugins/codebrowser
 	url = https://github.com/nagaozen/gedit-plugin-codebrowser.git
