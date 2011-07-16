@@ -43,3 +43,9 @@
 [submodule "plugins/codebrowser"]
 	path = plugins/codebrowser
 	url = https://github.com/nagaozen/gedit-plugin-codebrowser.git
+[submodule "plugins/FindInProject"]
+	path = plugins/FindInProject
+	url = https://github.com/eggegg/find-in-project.git
+[submodule "plugins/fuzzyopen"]
+	path = plugins/fuzzyopen
+	url = https://github.com/eggegg/fuzzyopen.git
