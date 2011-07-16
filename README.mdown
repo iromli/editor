@@ -1,0 +1,15 @@
+# Gedit Starter Kit
+
+My Gedit stuffs, heavily inspired by [Gmate](https://github.com/gmate/gmate).
+
+## Requirements
+
+* Gedit 2
+* Git
+* Bash
+* Ubuntu
+
+## Installation
+
+1. Checkout the repository, `git clone git://github.com/iromli/gedit-starter-kit.git`
+2. Go to `gedit-starter-kit` directory and execute `install.sh`
