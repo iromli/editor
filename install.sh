@@ -12,13 +12,24 @@ git submodule update --init
 
 echo -e "\n[PLUGINS]"
 for plugin in plugins/*; do
+    # checks if custom installer is exist
     if [[ -f "scripts/${plugin}.install.sh" ]]; then
         source "$GEDIT_STARTER_KIT/scripts/$plugin.install.sh"
-        cd $GEDIT_STARTER_KIT
+
+    # checks if installer provided in plugin directory
+    elif [[ -f $GEDIT_STARTER_KIT/$plugin/install.sh ]]; then
+        source $GEDIT_STARTER_KIT/$plugin/install.sh
+
+    # generic installer
     else
         pluginname=${plugin/plugins\//}
         echo "installing $pluginname plugin"
         cp -R $GEDIT_STARTER_KIT/$plugin/$pluginname* $GEDIT_PLUGIN_DIR
+    fi
+
+    # short circuit to ensure this block is executed from this directory
+    if [[ $PWD != $GEDIT_STARTER_KIT ]]; then
+        cd $GEDIT_STARTER_KIT
     fi
 done
 echo "installing Gedit plugins from Ubuntu repository"
