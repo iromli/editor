@@ -11,6 +11,9 @@ echo "updating submodules"
 git submodule update --init
 
 echo -e "\n[PLUGINS]"
+if [[ ! -d $GEDIT_PLUGIN_DIR ]]; then
+    mkdir -p $GEDIT_PLUGIN_DIR
+fi
 for plugin in plugins/*; do
     # checks if custom installer is exist
     if [[ -f "scripts/${plugin}.install.sh" ]]; then
@@ -35,16 +38,36 @@ done
 echo "installing Gedit plugins from Ubuntu repository"
 sudo apt-get install gedit-plugins
 
+# THEMES
 echo -e "\n[STYLES]"
+if [[ ! -d $GEDIT_STYLE_DIR ]]; then
+    mkdir -p $GEDIT_STYLE_DIR
+fi
 for style in styles/*; do
     theme=${style:7}
     echo "installing ${theme/.xml/} style"
     cp $GEDIT_STARTER_KIT/$style $GEDIT_STYLE_DIR
 done
 
+# LANGUAGE SPEC
 echo -e "\n[LANGUAGE SPECS]"
+if [[ ! -d $LANGUAGE_SPEC_DIR ]]; then
+    mkdir -p $LANGUAGE_SPEC_DIR
+fi
 for langspec in language-specs/*; do
     lang=${langspec:15}
     echo "installing ${lang/.lang/} language-spec"
     cp $GEDIT_STARTER_KIT/$langspec $LANGUAGE_SPEC_DIR
 done
+
+# MIME
+echo -e "\n[MIME]"
+if [[ ! -d $MIME_DIR/packages ]]; then
+    mkdir -p $MIME_DIR/packages
+fi
+for mime in mime/*; do
+    mime=${mime:5}
+    echo "installing ${mime/.xml/} MIME"
+    cp $GEDIT_STARTER_KIT/mime/$mime $MIME_DIR/packages
+done
+update-mime-database $MIME_DIR
