@@ -1,14 +1,9 @@
-#!/bin/bash
-
 GEDIT_STARTER_KIT=$(dirname $(readlink -f ${BASH_SOURCE[0]}))
 GEDIT_HOME=~/.gnome2/gedit
 GEDIT_PLUGIN_DIR=$GEDIT_HOME/plugins
 GEDIT_STYLE_DIR=$GEDIT_HOME/styles
 LANGUAGE_SPEC_DIR=~/.local/share/gtksourceview-2.0/language-specs
 MIME_DIR=~/.local/share/mime
-
-echo "updating submodules"
-git submodule update --init
 
 echo -e "\n[PLUGINS]"
 if [[ ! -d $GEDIT_PLUGIN_DIR ]]; then
@@ -35,8 +30,11 @@ for plugin in plugins/*; do
         cd $GEDIT_STARTER_KIT
     fi
 done
-echo "installing Gedit plugins from Ubuntu repository"
-sudo apt-get install gedit-plugins
+
+if [[ ! -z apt-get ]]; then
+    echo "installing/updating Gedit plugins from Ubuntu/Debian repository"
+    sudo apt-get install gedit-plugins
+fi
 
 # THEMES
 echo -e "\n[STYLES]"

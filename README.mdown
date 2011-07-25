@@ -9,7 +9,12 @@ My Gedit stuffs, heavily inspired by [Gmate](https://github.com/gmate/gmate).
 * Bash
 * Ubuntu
 
-## Installation
+## Install
 
-1. Checkout the repository, `git clone git://github.com/iromli/gedit-starter-kit.git`
-2. Go to `gedit-starter-kit` directory and execute `install.sh`
+1. Checkout the repository: `git clone git://github.com/iromli/gedit-starter-kit.git`
+2. Go to `gedit-starter-kit` directory and execute `init.sh`
+
+## Update
+
+1. Go to `gedit-starter-kit` directory
+2. Update the code using `update.sh`
