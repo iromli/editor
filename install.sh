@@ -31,7 +31,7 @@ for plugin in plugins/*; do
     fi
 done
 
-if [[ ! -z apt-get ]]; then
+if [[ ! -z `which apt-get` ]]; then
     echo "installing/updating Gedit plugins from Ubuntu/Debian repository"
     sudo apt-get install gedit-plugins
 fi
