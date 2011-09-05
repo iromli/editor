@@ -1,13 +1,13 @@
 # Gedit Starter Kit
 
-My Gedit stuffs, heavily inspired by [Gmate](https://github.com/gmate/gmate).
+My Gedit goodies, heavily inspired by [Gmate](https://github.com/gmate/gmate) project.
 
 ## Requirements
 
 * Gedit 2
 * Git
 * Bash
-* Ubuntu
+* Ubuntu (or other *nix variants) 
 
 ## Install
 
@@ -17,4 +17,4 @@ My Gedit stuffs, heavily inspired by [Gmate](https://github.com/gmate/gmate).
 ## Update
 
 1. Go to `gedit-starter-kit` directory
-2. Update the code using `update.sh`
+2. Update submodules and re-install them using `update.sh`
