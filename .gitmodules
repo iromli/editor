@@ -43,3 +43,6 @@
 [submodule "plugins/fuzzyopen"]
 	path = plugins/fuzzyopen
 	url = https://github.com/eggegg/fuzzyopen.git
+[submodule "plugins/phpkit"]
+	path = plugins/phpkit
+	url = git://github.com/iromli/gedit-phpkit.git
