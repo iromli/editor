@@ -4,9 +4,6 @@
 [submodule "plugins/pythonkit"]
 	path = plugins/pythonkit
 	url = git://github.com/iromli/gedit-pythonkit.git
-[submodule "plugins/phpkit"]
-	path = plugins/phpkit
-	url = git://github.com/iromli/gedit-phpkit.git
 [submodule "plugins/quickhighlightmode"]
 	path = plugins/quickhighlightmode
 	url = https://github.com/nagaozen/gedit-plugin-quickhighlightmode.git
