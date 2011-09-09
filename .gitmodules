@@ -19,9 +19,6 @@
 [submodule "plugins/zencoding"]
 	path = plugins/zencoding
 	url = https://github.com/mikecrittenden/zen-coding-gedit.git
-[submodule "plugins/folding"]
-	path = plugins/folding
-	url = https://github.com/mikecrittenden/gedit-folding.git
 [submodule "plugins/mterminal"]
 	path = plugins/mterminal
 	url = https://github.com/fazibear/gedit-mterminal.git
@@ -46,3 +43,6 @@
 [submodule "plugins/phpkit"]
 	path = plugins/phpkit
 	url = git://github.com/iromli/gedit-phpkit.git
+[submodule "plugins/folding"]
+	path = plugins/folding
+	url = https://github.com/alanhamlett/gedit-folding.git
