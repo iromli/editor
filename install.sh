@@ -18,6 +18,10 @@ for plugin in plugins/*; do
     elif [[ -f $GEDIT_STARTER_KIT/$plugin/install.sh ]]; then
         source $GEDIT_STARTER_KIT/$plugin/install.sh
 
+    # checks if Makefile provided in plugin directory
+    elif [[ -f $GEDIT_STARTER_KIT/$plugin/Makefile ]]; then
+        make -f $GEDIT_STARTER_KIT/$plugin/Makefile install
+
     # generic installer
     else
         pluginname=${plugin/plugins\//}
