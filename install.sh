@@ -20,7 +20,9 @@ for plugin in plugins/*; do
 
     # checks if Makefile provided in plugin directory
     elif [[ -f $GEDIT_STARTER_KIT/$plugin/Makefile ]]; then
-        make -f $GEDIT_STARTER_KIT/$plugin/Makefile install
+    	cd $GEDIT_STARTER_KIT/$plugin
+        make install
+        cd $OLDPWD
 
     # generic installer
     else
