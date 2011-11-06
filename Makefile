@@ -1,7 +1,8 @@
 GEDIT_DIR = ~/.local/share/gedit
+GSV3_DIR = ~/.local/share/gtksourceview-3.0
 
 install:
-	@if [ ! -d $(GEDIT_DIR) ]; then \
-		mkdir -p $(GEDIT_DIR)/{plugins,styles};\
+	@if [ ! -d $(GSV3_DIR) ]; then \
+		mkdir -p $(GSV3_DIR)/{styles};\
 	fi
-	@cp -R styles $(GEDIT_DIR)/styles;
+	@cp -R styles $(GSV3_DIR)/styles;
