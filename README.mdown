@@ -1,19 +1,14 @@
 # Gedit HQ
 
-My Gedit goodies, heavily inspired by [Gmate](https://github.com/gmate/gmate) project.
+My Gedit3 goodies
 
 ## Requirements
 
-* Gedit 2
+* Gedit 3
 * Git
 * Bash
 
 ## Install
 
 1. Checkout the repository: `git clone git://github.com/iromli/gedit.hq.git`
-2. Go to `gedit.hq` directory and execute `init.sh`
-
-## Update
-
-1. Go to `gedit.hq` directory
-2. Update submodules and re-install them using `update.sh`
+2. Go to `gedit.hq` directory and execute `make install`
