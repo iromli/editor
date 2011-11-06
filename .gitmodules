@@ -1,0 +1,3 @@
+[submodule "plugins/trailsave"]
+	path = plugins/trailsave
+	url = git://github.com/jonleighton/gedit-trailsave.git
