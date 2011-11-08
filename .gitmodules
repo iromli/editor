@@ -1,3 +1,27 @@
 [submodule "plugins/trailsave"]
 	path = plugins/trailsave
 	url = git://github.com/jonleighton/gedit-trailsave.git
+[submodule "plugins/snapopen"]
+	path = plugins/snapopen
+	url = git://github.com/MadsBuus/gedit-snapopen-plugin.git
+[submodule "plugins/accel-editor"]
+	path = plugins/accel-editor
+	url = https://github.com/nacho/gedit-accel-editor.git
+[submodule "plugins/markup_preview"]
+	path = plugins/markup_preview
+	url = git://github.com/iromli/gedit-markup_preview.git
+[submodule "plugins/phpkit"]
+	path = plugins/phpkit
+	url = git://github.com/iromli/gedit-phpkit.git
+[submodule "plugins/pythonkit"]
+	path = plugins/pythonkit
+	url = git://github.com/iromli/gedit-pythonkit.git
+[submodule "plugins/indent-converter"]
+	path = plugins/indent-converter
+	url = git://github.com/iromli/gedit-indent-converter.git
+[submodule "plugins/smarthome"]
+	path = plugins/smarthome
+	url = git://github.com/iromli/gedit-smarthome.git
+[submodule "plugins/tabsextend"]
+	path = plugins/tabsextend
+	url = git://github.com/iromli/gedit-tabsextend.git
