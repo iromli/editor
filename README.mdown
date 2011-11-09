@@ -1,12 +1,10 @@
 # Gedit HQ
 
-My Gedit3 goodies
+My Gedit 3 goodies
 
 ## Requirements
 
 * Gedit 3
-* Git
-* Bash
 
 ## Install
 
