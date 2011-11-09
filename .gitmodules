@@ -25,3 +25,6 @@
 [submodule "plugins/tabsextend"]
 	path = plugins/tabsextend
 	url = git://github.com/iromli/gedit-tabsextend.git
+[submodule "plugins/tabswitch"]
+	path = plugins/tabswitch
+	url = https://github.com/madhums/gedit-tabswitch.git
