@@ -1,4 +1,4 @@
-# Gedit HQ
+# Editor
 
 My Gedit 3 goodies
 
@@ -8,5 +8,5 @@ My Gedit 3 goodies
 
 ## Install
 
-1. Checkout the repository: `git clone git://github.com/iromli/gedit.hq.git`
-2. Go to `gedit.hq` directory and execute `make install`
+1. Checkout the repository: `git clone git://github.com/iromli/editor.git`
+2. Go to `editor` directory and execute `make install`
