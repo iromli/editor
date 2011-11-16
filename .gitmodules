@@ -28,3 +28,9 @@
 [submodule "plugins/tabswitch"]
 	path = plugins/tabswitch
 	url = https://github.com/madhums/gedit-tabswitch.git
+[submodule "plugins/zencoding"]
+	path = plugins/zencoding
+	url = git://github.com/mtrovo/zen-coding-gedit3.git
+[submodule "plugins/saveprompt"]
+	path = plugins/saveprompt
+	url = git://github.com/iromli/gedit-saveprompt.git
