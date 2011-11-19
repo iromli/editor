@@ -34,3 +34,6 @@
 [submodule "plugins/saveprompt"]
 	path = plugins/saveprompt
 	url = git://github.com/iromli/gedit-saveprompt.git
+[submodule "plugins/sourcecodebrowser"]
+	path = plugins/sourcecodebrowser
+	url = git://github.com/Quixotix/gedit-source-code-browser.git
