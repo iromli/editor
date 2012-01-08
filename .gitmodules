@@ -37,3 +37,6 @@
 [submodule "plugins/sourcecodebrowser"]
 	path = plugins/sourcecodebrowser
 	url = git://github.com/Quixotix/gedit-source-code-browser.git
+[submodule "plugins/editorconfig"]
+	path = plugins/editorconfig
+	url = git://github.com/editorconfig/editorconfig-gedit.git
