@@ -40,3 +40,6 @@
 [submodule "plugins/editorconfig"]
 	path = plugins/editorconfig
 	url = git://github.com/editorconfig/editorconfig-gedit.git
+[submodule "plugins/todo"]
+	path = plugins/todo
+	url = git://github.com/iromli/gedit-todo.git
